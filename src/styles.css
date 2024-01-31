@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-accent: #46fff4;
+  --accent-darker: #00a49a;
+  --main-red: #ff6666;
+  --background-dark: #0d1220;
+  --grey-dark: #20242e;
+  --grey-light: #373c49;
+  --grey-lighter: #a3a3a3;
+}
+
+body,
+input {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: var(--background-dark);
+}

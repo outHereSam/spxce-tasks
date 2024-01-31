@@ -1,0 +1,34 @@
+.task-item {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--grey-dark);
+  padding: 15px;
+  border-radius: 4px;
+}
+
+.task-item .complete-circle {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border: solid 1px #fff;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.task-item .left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.delete {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  appearance: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+}

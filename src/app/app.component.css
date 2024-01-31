@@ -1,0 +1,44 @@
+nav {
+  /* border: solid 1px pink; */
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--grey-dark);
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+nav input {
+  width: 100%;
+  border: none;
+  background-color: var(--grey-light);
+  padding: 15px 0;
+  text-indent: 15px;
+  border-radius: 4px;
+  margin: 0 0 20px 0;
+  outline: none;
+  color: #d4d4d4;
+}
+
+nav input::placeholder {
+  color: var(--grey-lighter);
+}
+
+p.add {
+  font-size: 12px;
+  color: var(--accent-darker);
+  cursor: pointer;
+}
+
+.headline {
+  text-align: center;
+  padding: 30px 0 40px;
+}
+
+.main-content {
+  margin: 0 30px;
+}
