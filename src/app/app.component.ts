@@ -33,4 +33,17 @@ export class AppComponent {
       this.todoValue = '';
     }
   }
+
+  addTaskOnEnter(event: KeyboardEvent) {
+    if (this.todoValue) {
+      if (event.key === 'Enter') {
+        this.taskService.addNewTask({
+          id: this.nextTaskId,
+          title: this.todoValue,
+          completed: false,
+        });
+        this.todoValue = '';
+      }
+    }
+  }
 }

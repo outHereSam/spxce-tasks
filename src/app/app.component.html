@@ -10,6 +10,7 @@
       type="text"
       placeholder="Enter a new task..."
       [(ngModel)]="todoValue"
+      (keyup)="addTaskOnEnter($event)"
     />
     <p class="add" (click)="addTask()">Add task</p>
   </nav>
