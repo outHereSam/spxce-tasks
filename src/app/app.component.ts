@@ -32,9 +32,12 @@ export class AppComponent {
       });
       this.todoValue = '';
     }
+    console.log(this.taskService.getAllTasks());
   }
 
   addTaskOnEnter(event: KeyboardEvent) {
+    this.taskList = this.taskService.getAllTasks();
+    this.nextTaskId = this.taskList.length + 1;
     if (this.todoValue) {
       if (event.key === 'Enter') {
         this.taskService.addNewTask({
@@ -45,5 +48,6 @@ export class AppComponent {
         this.todoValue = '';
       }
     }
+    console.log(this.taskService.getAllTasks());
   }
 }
