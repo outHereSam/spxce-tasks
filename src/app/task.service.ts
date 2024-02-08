@@ -6,21 +6,21 @@ import { TaskItem } from './task-item';
 })
 export class TaskService {
   protected taskList: TaskItem[] = [
-    {
-      id: 1,
-      title: 'Design a new todo app',
-      completed: false,
-    },
-    {
-      id: 2,
-      title: 'Build todo app in Angular',
-      completed: false,
-    },
-    {
-      id: 3,
-      title: 'Take a nap',
-      completed: false,
-    },
+    // {
+    //   id: 1,
+    //   title: 'Design a new todo app',
+    //   completed: false,
+    // },
+    // {
+    //   id: 2,
+    //   title: 'Build todo app in Angular',
+    //   completed: false,
+    // },
+    // {
+    //   id: 3,
+    //   title: 'Take a nap',
+    //   completed: false,
+    // },
   ];
   constructor() {}
 
